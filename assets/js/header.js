@@ -6,21 +6,28 @@ const headerComponent = `
                     <img src="/assets/img/icons/burger.svg" alt="">
                 </button>
                 <div class="header-logo">
-                    <a href="/"><img src="/assets/img/logo.svg" alt="Global Study Logo"></a>
+                    <a href="/">
+                        <img src="/assets/img/logo.png" alt="Mariana Uspenko Logo">
+                        <span>Ваш особистий психолог</span>
+                    </a>
                 </div>
                 <div class="header-menu">
                     <nav>
                         <ul class="header-menu-list">
-                            <li><a class="header-link" href="/">Головна</a></li>
-                            <li><a class="header-link" href="/universe.html">Університети</a></li>
-                            <li><a class="header-link" href="/lang.html">Вивчення мови</a></li>
-                            <li><a class="header-link" href="/service.html">Послуги</a></li>
-                            <li><a class="header-link" href="/contact.html">Контакти</a></li>
+                            <li><a class="header-link" href="/#services">Послуги</a></li>
+                            <li><a class="header-link" href="/about.html">Про мене</a></li>
+                            <li><a class="header-link" href="/blog.html">Блог</a></li>
+                            <li><a class="header-link" href="/#contact">Звʼязатись зі мною</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="header-btn">
-                    <button class="btn btn_light">Передзвоніть мені</button> 
+                <div class="header-lang">
+                    <label class="lang-toggle">
+                        <span class="lang">UA</span>
+                        <input type="checkbox" id="langSwitch">
+                        <span class="slider"></span>
+                        <span class="lang">POL</span>
+                    </label>
                 </div>
             </div>
             <div class="header-mobile-container">
@@ -29,11 +36,10 @@ const headerComponent = `
                 </button>
                 <div class="header-mobile-menu">
                     <ul class="header-mobile-menu-list">
-                        <li><a class="header-link" href="/">Головна</a></li>
-                        <li><a class="header-link" href="/universe.html">Університети</a></li>
-                        <li><a class="header-link" href="/lang.html">Вивчення мови</a></li>
-                        <li><a class="header-link" href="/service.html">Послуги</a></li>
-                        <li><a class="header-link" href="/contact.html">Контакти</a></li>
+                        <li><a class="header-link" href="/#services">Послуги</a></li>
+                        <li><a class="header-link" href="/about.html">Про мене</a></li>
+                        <li><a class="header-link" href="/blog.html">Блог</a></li>
+                        <li><a class="header-link" href="/#contact">Звʼязатись зі мною</a></li>
                     </ul>
                 </div>
             </div>
