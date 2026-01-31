@@ -80,6 +80,17 @@ img {
 	color: var(--color_black);
 }
 
+.h3_title {
+	font-family: "EB Garamond", serif;
+font-weight: 400;
+font-size: 32px;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: center;
+text-transform: uppercase;
+color: var(--color_black);
+}
+
 .text {
 	font-family: "Inter", sans-serif;
 	font-weight: 400;
@@ -116,6 +127,19 @@ img {
 	}
 }
 
+.swiper-btn {
+	width: 17.75px;
+	cursor: pointer;
+	position: static;
+	margin: 0;
+	padding: 0;
+	height: fit-content;
+
+	&::after {
+		content: none;
+	}
+}
+
 .input_box {
 	width: 100%;
 
@@ -144,6 +168,10 @@ letter-spacing: -3%;
 vertical-align: middle;
 		outline: none;
 		color: #b2c3c5;
+
+		&::placeholder {
+			color: #b2c3c5;
+		}
 	}
 }
 
@@ -170,5 +198,10 @@ vertical-align: middle;
 		&:hover {
 			transform: scale(0.98);
 		}
+	}
+
+	.problems__list li:hover {
+		background-color: var(--color_white);
+		color: var(--color_green1);
 	}
 }

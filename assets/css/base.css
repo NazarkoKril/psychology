@@ -91,6 +91,17 @@ img {
   color: var(--color_black);
 }
 
+.h3_title {
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color_black);
+}
+
 .text {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -126,6 +137,20 @@ img {
   color: var(--color_white);
 }
 
+.swiper-btn {
+  width: 17.75px;
+  cursor: pointer;
+  position: static;
+  margin: 0;
+  padding: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.swiper-btn::after {
+  content: none;
+}
+
 .input_box {
   width: 100%;
 }
@@ -154,6 +179,21 @@ img {
   outline: none;
   color: #b2c3c5;
 }
+.input_box input::-webkit-input-placeholder {
+  color: #b2c3c5;
+}
+.input_box input::-moz-placeholder {
+  color: #b2c3c5;
+}
+.input_box input:-ms-input-placeholder {
+  color: #b2c3c5;
+}
+.input_box input::-ms-input-placeholder {
+  color: #b2c3c5;
+}
+.input_box input::placeholder {
+  color: #b2c3c5;
+}
 
 @media (max-width: 1020px) {
   main {
@@ -172,5 +212,9 @@ img {
   .btn:hover {
     -webkit-transform: scale(0.98);
             transform: scale(0.98);
+  }
+  .problems__list li:hover {
+    background-color: var(--color_white);
+    color: var(--color_green1);
   }
 }
