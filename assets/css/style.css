@@ -816,15 +816,16 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 20px;
+  gap: 46px 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 46px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .blog .btn {
   display: block;
-  margin: 0 auto;
+  margin: 46px auto 0;
   width: 233px;
 }
 
@@ -832,6 +833,7 @@ footer {
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
+  display: block;
 }
 .blog-card__photo {
   width: 336px;
@@ -900,6 +902,25 @@ footer {
 .about__photos .frame-photo_3 {
   -webkit-transform: rotate(2.57deg);
           transform: rotate(2.57deg);
+}
+
+.blog-hero {
+  padding: 90px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1019607843))), url(/assets/img/blog-hero.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.1019607843)), url(/assets/img/blog-hero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blog-hero h1 {
+  font-family: "EB Garamond";
+  font-weight: 500;
+  font-size: 59px;
+  line-height: 117%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color_white);
 }
 
 .preloader {
