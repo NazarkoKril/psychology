@@ -8,6 +8,14 @@
   --color_green2: #577b7b;
 }
 
+.white-bg .header-container p, .white-bg .header-container span, .white-bg .header-container a {
+  color: var(--color_green1) !important;
+}
+.white-bg .header-container .header-logo a img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
 .header-container {
   width: 100%;
   position: absolute;
@@ -518,6 +526,9 @@ footer {
 .feedback .swiper-button-next {
   right: 0;
 }
+.feedback__slide {
+  padding: 0 60px;
+}
 .feedback__slide .quote-mark img {
   width: 86.71px;
 }
@@ -775,6 +786,22 @@ footer {
   margin-top: 17px;
 }
 
+.frame-photo {
+  position: relative;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.frame-photo .photo {
+  position: absolute;
+  width: 92%;
+  top: 3.8%;
+  left: 50%;
+  -webkit-transform: translate(-49.3%);
+          transform: translate(-49.3%);
+}
+
 .blog {
   padding: 50px 0;
 }
@@ -831,6 +858,48 @@ footer {
 }
 .blog-card.big .blog-card__photo {
   width: 411.22px;
+}
+
+.about {
+  padding: 125px 0 50px;
+}
+.about h1 {
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color_black);
+  margin-bottom: 50px;
+}
+.about .text {
+  max-width: 450px;
+  margin: 0 auto 50px;
+}
+.about__photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+.about__photos .frame-photo_1 {
+  -webkit-transform: rotate(7.26deg);
+          transform: rotate(7.26deg);
+}
+.about__photos .frame-photo_2 {
+  -webkit-transform: rotate(-4.17deg);
+          transform: rotate(-4.17deg);
+}
+.about__photos .frame-photo_3 {
+  -webkit-transform: rotate(2.57deg);
+          transform: rotate(2.57deg);
 }
 
 .preloader {
