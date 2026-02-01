@@ -921,7 +921,7 @@ footer {
   background-size: cover;
 }
 .blog-hero h1 {
-  font-family: "EB Garamond";
+  font-family: "EB Garamond", serif;
   font-weight: 500;
   font-size: 59px;
   line-height: 117%;
@@ -974,7 +974,7 @@ footer {
   margin-left: 18px;
 }
 .service-info__content h2 {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 120%;
@@ -1007,7 +1007,7 @@ footer {
   margin-bottom: 24px;
 }
 .service-pricing__item h3 {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 120%;
@@ -1017,12 +1017,137 @@ footer {
   padding-top: 4.5px;
 }
 .service-pricing__item p {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 36px;
   line-height: 145%;
   letter-spacing: -0.5%;
   text-align: right;
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 0.5490196078);
+}
+
+.blog-content {
+  padding: 155px 0 80px;
+}
+.blog-content .date {
+  line-height: 145%;
+  color: rgba(0, 0, 0, 0.5490196078);
+  margin-bottom: 32px;
+  text-align: center;
+}
+.blog-content h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  letter-spacing: -2.5%;
+  text-align: center;
+  vertical-align: middle;
+  color: var(--color_black);
+  margin-bottom: 16px;
+}
+.blog-content .subtitle {
+  line-height: 145%;
+  color: rgba(0, 0, 0, 0.5490196078);
+  margin-bottom: 80px;
+  text-align: center;
+}
+.blog-content__photo {
+  overflow: hidden;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto 120px;
+  max-height: 533px;
+}
+.blog-content__photo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog-content__text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.blog-content__text h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -2%;
+  vertical-align: middle;
+  color: var(--color_black);
+  margin-bottom: 16px;
+}
+.blog-content__text .text {
+  font-weight: 500;
+  line-height: 145%;
+  color: rgba(0, 0, 0, 0.5490196078);
+}
+.blog-content__text:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.quote {
+  padding: 80px 0;
+}
+.quote__text {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 130%;
+  letter-spacing: -2%;
+  text-align: center;
+  vertical-align: middle;
+  max-width: 800px;
+  margin: 0 auto 48px;
+}
+.quote__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.quote__photo {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.quote__photo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.quote__author {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.quote__author .name {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: -1.5%;
+  color: var(--color_black);
+}
+.quote__author .job {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 145%;
+  letter-spacing: -0.5%;
   vertical-align: middle;
   color: rgba(0, 0, 0, 0.5490196078);
 }
