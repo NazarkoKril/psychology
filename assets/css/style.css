@@ -8,7 +8,9 @@
   --color_green2: #577b7b;
 }
 
-.white-bg .header-container p, .white-bg .header-container span, .white-bg .header-container a {
+.white-bg .header-container p,
+.white-bg .header-container span,
+.white-bg .header-container a {
   color: var(--color_green1) !important;
 }
 .white-bg .header-container .header-logo a img {
@@ -431,6 +433,12 @@ footer {
 }
 .services .h2_title {
   text-align: center;
+  margin-bottom: 46px;
+}
+.services .subtitle {
+  text-align: center;
+  line-height: 145%;
+  color: rgba(0, 0, 0, 0.5490196078);
   margin-bottom: 46px;
 }
 .services__swiper {
@@ -921,6 +929,102 @@ footer {
   text-align: center;
   text-transform: uppercase;
   color: var(--color_white);
+}
+
+.service-info {
+  padding: 195px 0 120px;
+}
+.service-info h1 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  letter-spacing: -2.5%;
+  vertical-align: middle;
+  color: var(--color_black);
+  margin-bottom: 80px;
+}
+.service-info__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.service-info__flex .left,
+.service-info__flex .right {
+  max-width: 500px;
+}
+.service-info__photo {
+  overflow: hidden;
+  border-radius: 10px;
+}
+.service-info__photo img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.service-info__content {
+  max-width: 400px;
+  margin-left: 18px;
+}
+.service-info__content h2 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: -2%;
+  vertical-align: middle;
+  color: var(--color_black);
+  margin-bottom: 24px;
+}
+.service-info__content .text {
+  color: rgba(0, 0, 0, 0.5490196078);
+  line-height: 145%;
+}
+
+.service-pricing {
+  padding: 120px 0;
+}
+.service-pricing__item {
+  max-width: 1040px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1490196078);
+  margin: 0 auto;
+  padding-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.service-pricing__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.service-pricing__item h3 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: -2%;
+  vertical-align: middle;
+  color: var(--color_black);
+  padding-top: 4.5px;
+}
+.service-pricing__item p {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 145%;
+  letter-spacing: -0.5%;
+  text-align: right;
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 0.5490196078);
 }
 
 .preloader {

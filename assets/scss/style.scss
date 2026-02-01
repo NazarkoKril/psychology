@@ -11,7 +11,9 @@
 
 .white-bg {
     .header-container {
-        p, span, a {
+        p,
+        span,
+        a {
             color: var(--color_green1) !important;
         }
 
@@ -411,6 +413,13 @@ footer {
         margin-bottom: 46px;
     }
 
+    .subtitle {
+        text-align: center;
+        line-height: 145%;
+        color: #0000008c;
+        margin-bottom: 46px;
+    }
+
     &__swiper {
         width: 100%;
         overflow: visible !important;
@@ -790,7 +799,7 @@ footer {
 .blog-card {
     width: min-content;
     display: block;
-    
+
     &__photo {
         width: 336px;
         overflow: hidden;
@@ -824,22 +833,22 @@ footer {
     }
 }
 
-// about.html 
+// about.html
 .about {
     padding: 125px 0 50px;
 
     h1 {
         font-family: "EB Garamond", serif;
-font-weight: 500;
-font-style: Medium;
-font-size: 46px;
-line-height: 120%;
-letter-spacing: 0%;
-vertical-align: middle;
-text-align: center;
-text-transform: uppercase;
-color: var(--color_black);
-margin-bottom: 50px;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 46px;
+        line-height: 120%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--color_black);
+        margin-bottom: 50px;
     }
 
     .text {
@@ -868,24 +877,122 @@ margin-bottom: 50px;
     }
 }
 
-// blog.html 
+// blog.html
 .blog-hero {
     padding: 90px 0;
-    background:
-        linear-gradient(#0000001a), url(/assets/img/blog-hero.png);
+    background: linear-gradient(#0000001a), url(/assets/img/blog-hero.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
     h1 {
         font-family: "EB Garamond";
-font-weight: 500;
-font-size: 59px;
-line-height: 117%;
-letter-spacing: 0%;
-text-align: center;
-text-transform: uppercase;
-color: var(--color_white);
+        font-weight: 500;
+        font-size: 59px;
+        line-height: 117%;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--color_white);
+    }
+}
+
+// service-page.html
+
+.service-info {
+    padding: 195px 0 120px;
+
+    h1 {
+        font-family: "Inter";
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 110.00000000000001%;
+        letter-spacing: -2.5%;
+        vertical-align: middle;
+        color: var(--color_black);
+        margin-bottom: 80px;
+    }
+
+    &__flex {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        justify-content: space-between;
+
+        .left,
+        .right {
+            max-width: 500px;
+        }
+    }
+
+    &__photo {
+        overflow: hidden;
+        border-radius: 10px;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        max-width: 400px;
+        margin-left: 18px;
+
+        h2 {
+            font-family: "Inter";
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 120%;
+            letter-spacing: -2%;
+            vertical-align: middle;
+            color: var(--color_black);
+            margin-bottom: 24px;
+        }
+
+        .text {
+            color: #0000008c;
+            line-height: 145%;
+        }
+    }
+}
+
+.service-pricing {
+    padding: 120px 0;
+
+    &__item {
+        max-width: 1040px;
+        border-bottom: 1px solid #00000026;
+        margin: 0 auto;
+        padding-bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+
+        h3 {
+            font-family: "Inter";
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 120%;
+            letter-spacing: -2%;
+            vertical-align: middle;
+            color: var(--color_black);
+            padding-top: 4.5px;
+        }
+
+        p {
+            font-family: "Inter";
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 145%;
+            letter-spacing: -0.5%;
+            text-align: right;
+            vertical-align: middle;
+            color: #0000008c;
+        }
     }
 }
 
