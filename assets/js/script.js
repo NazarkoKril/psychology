@@ -66,9 +66,10 @@ if (headerContainer) {
 document.addEventListener("DOMContentLoaded", () => {
 AOS.init({
     delay: 100,
-    duration: 500, 
+    duration: 1000, 
     easing: 'ease-out',
     once: true,
+	offset: 50,
 	disable: 'mobile'
 });
 });

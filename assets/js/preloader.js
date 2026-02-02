@@ -8,7 +8,8 @@
     <div id="preloader" class="preloader" aria-hidden="true">
       <div class="preloader__inner">
         <div class="preloader__logo">
-          <img src="/assets/img/logo.svg" alt="Global Study">
+          <img src="/assets/img/logo.png" alt="Mariana Uspenko">
+          <p>Ваш особистий психолог</p>
         </div>
         <div class="preloader__center">
           <div class="preloader__bar">

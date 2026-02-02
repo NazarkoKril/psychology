@@ -195,6 +195,94 @@ img {
   color: #b2c3c5;
 }
 
+.selector {
+  width: 100%;
+}
+.selector .input-selector {
+  position: relative;
+  width: 100%;
+}
+.selector .select-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color_green2);
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.selector .select-box svg {
+  width: 4.48px;
+  height: 10.3px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-transition: -webkit-transform 0.25s ease;
+  transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
+  transition: transform 0.25s ease, -webkit-transform 0.25s ease;
+}
+.selector .selected {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 117%;
+  letter-spacing: -3%;
+  vertical-align: middle;
+  color: #b2c3c5;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+.selector .select-wrapper.active svg {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.selector .select-wrapper.active .dropdown-list {
+  max-height: 220px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.selector .dropdown-list {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 6px 0;
+  list-style: none;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  max-height: 0;
+  opacity: 0;
+  overflow-y: auto;
+  pointer-events: none;
+  -webkit-transition: max-height 0.3s ease, opacity 0.2s ease;
+  transition: max-height 0.3s ease, opacity 0.2s ease;
+  z-index: 30;
+}
+.selector .dropdown-item {
+  padding: 10px 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 145%;
+  letter-spacing: -0.5%;
+  color: var(--color_black);
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
 @media (max-width: 1020px) {
   main {
     padding-top: 73px;
@@ -216,5 +304,15 @@ img {
   .problems__list li:hover {
     background-color: var(--color_white);
     color: var(--color_green1);
+  }
+  .selector .dropdown-item:hover {
+    background-color: rgba(130, 158, 161, 0.15);
+    color: var(--color_black);
+  }
+  .service-card:hover, .blog-card:hover {
+    opacity: 0.8;
+  }
+  .service-info__photo:hover img {
+    opacity: 0.8;
   }
 }

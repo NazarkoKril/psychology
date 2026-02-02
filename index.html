@@ -33,7 +33,7 @@
     <section class="specialist">
       <div class="container">
         <h2 class="h2_title">Ви в руках спеціаліста</h2>
-        <div class="specialist__content">
+        <div class="specialist__content" data-aos="fade" data-aos-offset="0" data-aos-delay="0">
           <p class="text">Якщо ти втомився бути “сильним” і хочеш просто бути живим — це достатня причина почати. Напиши
             в директ і забронюй першу консультацію.</p>
           <div class="specialist__photo">
@@ -48,19 +48,19 @@
       <div class="container">
         <div class="numbers__content">
           <div class="numbers__item">
-            <span class="number">20+</span>
+            <span class="number counter" data-target="20" data-duration="2000">20<span>+</span></span>
             <p>клієнтів</p>
           </div>
           <div class="numbers__item">
-            <span class="number">100+</span>
+            <span class="number counter" data-target="100" data-duration="2000">100<span>+</span></span>
             <p>відгуків</p>
           </div>
           <div class="numbers__item">
-            <span class="number">20+</span>
+            <span class="number counter" data-target="20" data-duration="2000">20<span>+</span></span>
             <p>клієнтів</p>
           </div>
           <div class="numbers__item">
-            <span class="number">100+</span>
+            <span class="number counter" data-target="100" data-duration="2000">100<span>+</span></span>
             <p>відгуків</p>
           </div>
         </div>
@@ -71,7 +71,7 @@
         <h2 class="h2_title">Послуги</h2>
         <div class="swiper main-swiper services__swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-aos="fade-up" data-aos-offset="12" data-aos-delay="250">
               <div class="service-card">
                 <h3 class="h3_title">Терапія індивідуальна</h3>
                 <p class="service-card__cost">190 зл</p>
@@ -84,7 +84,7 @@
                 <a href="/service-page.html" class="btn btn_white">Детальніше про послугу</a>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-aos="fade-up" data-aos-offset="12" data-aos-delay="250">
               <div class="service-card">
                 <h3 class="h3_title">Терапія індивідуальна</h3>
                 <p class="service-card__cost">190 зл</p>
@@ -97,7 +97,7 @@
                 <a href="/service-page.html" class="btn btn_white">Детальніше про послугу</a>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-aos="fade-up" data-aos-offset="12" data-aos-delay="250">
               <div class="service-card">
                 <h3 class="h3_title">Терапія індивідуальна</h3>
                 <p class="service-card__cost">190 зл</p>
@@ -110,7 +110,7 @@
                 <a href="/service-page.html" class="btn btn_white">Детальніше про послугу</a>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-aos="fade-up" data-aos-offset="12" data-aos-delay="250">
               <div class="service-card">
                 <h3 class="h3_title">Терапія індивідуальна</h3>
                 <p class="service-card__cost">190 зл</p>
@@ -123,7 +123,7 @@
                 <a href="/service-page.html" class="btn btn_white">Детальніше про послугу</a>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-aos="fade-up" data-aos-offset="12" data-aos-delay="250">
               <div class="service-card">
                 <h3 class="h3_title">Терапія індивідуальна</h3>
                 <p class="service-card__cost">190 зл</p>
@@ -136,7 +136,7 @@
                 <a href="/service-page.html" class="btn btn_white">Детальніше про послугу</a>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-aos="fade-up" data-aos-offset="12" data-aos-delay="250">
               <div class="service-card">
                 <h3 class="h3_title">Терапія індивідуальна</h3>
                 <p class="service-card__cost">190 зл</p>
@@ -254,8 +254,8 @@
     </section>
     <section class="problems">
       <div class="container">
-        <h2>Допоможу з актуальними темами</h2>
-        <ul class="problems__list">
+        <h2 data-aos="fade" data-aos-offset="0">Допоможу з актуальними темами</h2>
+        <ul class="problems__list" data-aos="fade" data-aos-offset="0">
           <li>Депресивні стани</li>
           <li>Дратівливість</li>
           <li>Тривожні стани</li>
@@ -387,14 +387,46 @@
               </div>
               <div class="input_box">
                 <label for="age">Вік</label>
-                <input type="number" id="age" placeholder="Вік">
+                <div class="selector" id="age">
+                  <div class="input-selector select-wrapper">
+                    <div class="select-box input_default" tabindex="0">
+                      <span class="selected">Оберіть вік</span>
+                      <svg width="18" height="41" viewBox="0 0 18 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M17.4385 19.4893C17.8561 20.0295 17.8561 20.7839 17.4385 21.3242L2.37305 40.8145L3.4077e-06 38.9795L14.3555 20.4062L1.60332e-07 1.83398L2.37305 -2.07459e-07L17.4385 19.4893Z"
+                          fill="#577B7B" />
+                      </svg>
+                    </div>
+
+                    <ul class="dropdown-list">
+                      <!-- генерується JS -->
+                    </ul>
+                  </div>
+                </div>
               </div>
               <div class="input_box">
                 <label for="gender">Стать</label>
-                <input type="text" id="gender" placeholder="Стать">
+                <div class="selector" id="gender">
+                  <div class="input-selector select-wrapper">
+                    <div class="select-box input_default" tabindex="0">
+                      <span class="selected">Оберіть стать</span>
+                      <svg width="18" height="41" viewBox="0 0 18 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M17.4385 19.4893C17.8561 20.0295 17.8561 20.7839 17.4385 21.3242L2.37305 40.8145L3.4077e-06 38.9795L14.3555 20.4062L1.60332e-07 1.83398L2.37305 -2.07459e-07L17.4385 19.4893Z"
+                          fill="#577B7B" />
+                      </svg>
+                    </div>
+
+                    <ul class="dropdown-list">
+                      <li class="dropdown-item" data-value="female">Жінка</li>
+                      <li class="dropdown-item" data-value="male">Чоловік</li>
+                      <li class="dropdown-item" data-value="other">Інше / не хочу вказувати</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
               <div class="input_box">
-                <label for="city">ІмʼМісце проживанняя</label>
+                <label for="city">Місце проживанняя</label>
                 <input type="text" id="city" placeholder="Місце проживання">
               </div>
               <div class="input_box">
@@ -476,6 +508,7 @@
   <script defer src="/assets/js/aos.js"></script>
   <script defer src="/assets/js/inputmask.min.js"></script>
   <script defer src="/assets/js/masks.js"></script>
+  <script defer src="/assets/js/selector.js"></script>
 
 </body>
 

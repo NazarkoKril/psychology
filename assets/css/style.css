@@ -492,6 +492,8 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   gap: 60px;
+  -webkit-transition: var(--trans);
+  transition: var(--trans);
 }
 .service-card .h3_title {
   color: var(--color_white);
@@ -615,8 +617,8 @@ footer {
   letter-spacing: -3%;
   text-align: center;
   color: var(--color_white);
-  -webkit-transition: var(--trans);
-  transition: var(--trans);
+  -webkit-transition: var(--trans) !important;
+  transition: var(--trans) !important;
 }
 .problems .btn {
   display: block;
@@ -842,6 +844,8 @@ footer {
   width: -moz-min-content;
   width: min-content;
   display: block;
+  -webkit-transition: var(--trans);
+  transition: var(--trans);
 }
 .blog-card__photo {
   width: 336px;
@@ -968,6 +972,8 @@ footer {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: var(--trans);
+  transition: var(--trans);
 }
 .service-info__content {
   max-width: 400px;
@@ -1155,8 +1161,8 @@ footer {
 .preloader {
   --blur: 16px;
   --overlay: rgba(240, 245, 250, 0.9);
-  --bar-bg: rgba(123, 170, 208, 0.3);
-  --bar-fill: rgba(34, 42, 63, 0.85);
+  --bar-bg: rgba(130, 158, 161, 0.3);
+  --bar-fill: rgba(87, 123, 123, 0.85);
   position: fixed;
   inset: 0;
   z-index: 9999;
@@ -1190,9 +1196,26 @@ footer {
           transform: translateZ(0);
 }
 
+.preloader__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+.preloader__logo p {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
 .preloader__logo img {
-  width: 180px;
+  width: 80px;
   height: auto;
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 .preloader__center {
@@ -1238,8 +1261,8 @@ footer {
 }
 
 .preloader__percent {
-  color: var(--color_dark_blue);
-  font-family: "Geologica", system-ui, sans-serif;
+  color: var(--color_black);
+  font-family: "Inter", system-ui, sans-serif;
   font-size: clamp(16px, 2.8vw, 22px);
   font-weight: 700;
   line-height: 1;
@@ -1252,7 +1275,7 @@ footer {
   font-weight: 400;
   line-height: 16px;
   letter-spacing: -0.14px;
-  color: var(--color_dark_blue);
+  color: var(--color_black);
 }
 
 .preloader--done {
