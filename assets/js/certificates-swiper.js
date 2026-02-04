@@ -6,7 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
-        spaceBetween: 106,
+        spaceBetween: 50,
         speed: 800,
+        breakpoints: {
+            800: {
+                spaceBetween: 106
+            }
+        }
     });
 });

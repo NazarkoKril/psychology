@@ -22,14 +22,14 @@
   padding: 0px 20px;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1280px) {
   .container {
-    padding: 0 40px;
+    padding: 0 48px;
   }
 }
 @media (max-width: 1020px) {
   .container {
-    padding: 0 20px;
+    padding: 0 30px;
   }
 }
 @media (min-width: 1441px) {
@@ -284,9 +284,6 @@ img {
 }
 
 @media (max-width: 1020px) {
-  main {
-    padding-top: 73px;
-  }
   .input {
     width: 251px;
   }
