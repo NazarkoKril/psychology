@@ -1418,6 +1418,7 @@ footer {
   }
   .service-info h1 {
     margin-bottom: 60px;
+    text-align: center;
   }
   .service-info__flex {
     -webkit-box-orient: vertical;
@@ -1451,6 +1452,9 @@ footer {
   .blog-content .subtitle {
     margin-bottom: 60px;
   }
+  .blog .h2_title.mobile-small {
+    font-size: 32px;
+  }
 }
 @media (max-width: 800px) {
   .feedback {
@@ -1474,7 +1478,7 @@ footer {
   .feedback__slide .quote-mark.down {
     margin-top: 60px;
   }
-  .feedback__content h3 {
+  .feedback__slide__content h3 {
     font-size: 34px;
   }
   .videos__list {
@@ -1516,7 +1520,8 @@ footer {
     min-width: 349px;
     margin: 0 -18px 46px;
   }
-  .swiper-buttons {
+  .services__swiper .swiper-buttons,
+  .videos__swiper .swiper-buttons {
     padding: 0 18px;
   }
   .videos__swiper {

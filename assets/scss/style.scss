@@ -1379,6 +1379,7 @@ footer {
 
         h1 {
             margin-bottom: 60px;
+            text-align: center;
         }
 
         &__flex {
@@ -1414,6 +1415,10 @@ footer {
             margin-bottom: 60px;
         }
     }
+
+    .blog .h2_title.mobile-small {
+        font-size: 32px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -1440,10 +1445,10 @@ footer {
             .quote-mark.down {
                 margin-top: 60px;
             }
-        }
 
-        &__content h3 {
-            font-size: 34px;
+            &__content h3 {
+                font-size: 34px;
+            }
         }
     }
 
@@ -1485,8 +1490,11 @@ footer {
         margin: 0 -18px 46px;
     }
 
-    .swiper-buttons {
-        padding: 0 18px;
+    .services__swiper,
+    .videos__swiper {
+        .swiper-buttons {
+            padding: 0 18px;
+        }
     }
 
     .videos__swiper {
@@ -1548,9 +1556,9 @@ footer {
         height: 43px;
         mask-image: url("/assets/img/logo.png");
         mask-repeat: no-repeat;
-            mask-position: center;
-            mask-size: contain;
-            background-color: var(--color_green2);
+        mask-position: center;
+        mask-size: contain;
+        background-color: var(--color_green2);
     }
 }
 
