@@ -310,6 +310,7 @@ footer {
         letter-spacing: -0.5%;
         vertical-align: middle;
         color: #a1a1a1;
+        transition: var(--trans);
     }
 
     .footer-bottom {
@@ -1422,6 +1423,10 @@ footer {
 }
 
 @media (max-width: 800px) {
+    .hero {
+        height: 100svh;
+    }
+    
     .feedback {
         padding: 100px 0 150px;
 

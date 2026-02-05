@@ -309,4 +309,8 @@ img {
 	.service-info__photo:hover img {
 		opacity: 0.8;
 	}
+
+	.footer-container .footer-link:hover {
+		color: var(--color_green1);
+	}
 }
