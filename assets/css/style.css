@@ -597,6 +597,7 @@ footer {
 }
 .service-card__list li {
   list-style-type: disc;
+  color: #dbdbdb;
 }
 
 .feedback {
@@ -1063,10 +1064,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 50px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  gap: 50px 200px;
 }
 .service-info__flex .left,
 .service-info__flex .right {
@@ -1086,7 +1084,6 @@ footer {
 }
 .service-info__content {
   max-width: 400px;
-  margin-left: 18px;
 }
 .service-info__content h2 {
   font-family: "Inter", sans-serif;

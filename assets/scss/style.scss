@@ -548,6 +548,7 @@ footer {
 
         li {
             list-style-type: disc;
+            color: #dbdbdb;
         }
     }
 }
@@ -999,8 +1000,7 @@ footer {
     &__flex {
         display: flex;
         align-items: center;
-        gap: 50px;
-        justify-content: space-between;
+        gap: 50px 200px;
 
         .left,
         .right {
@@ -1022,7 +1022,6 @@ footer {
 
     &__content {
         max-width: 400px;
-        margin-left: 18px;
 
         h2 {
             font-family: "Inter", sans-serif;
