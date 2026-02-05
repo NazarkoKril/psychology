@@ -361,12 +361,16 @@ footer {
 .hero {
   position: relative;
   height: 115svh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1019607843)), to(rgba(0, 0, 0, 0.1019607843))), url(/assets/img/hero.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.1019607843), rgba(0, 0, 0, 0.1019607843)), url(/assets/img/hero.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  overflow: hidden;
+  clip-path: inset(0);
+}
+.hero__bg {
+  position: fixed;
+  inset: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1019607843)), to(rgba(0, 0, 0, 0.1019607843))), url("/assets/img/hero.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.1019607843), rgba(0, 0, 0, 0.1019607843)), url("/assets/img/hero.jpg") center/cover no-repeat;
+  z-index: 0;
+  will-change: transform;
 }
 .hero .container_pd {
   height: 100%;
@@ -387,6 +391,8 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  z-index: 1;
 }
 .hero h1 {
   font-family: "EB Garamond", serif;
@@ -606,17 +612,24 @@ footer {
 .feedback__swiper {
   width: 100%;
 }
-.feedback .swiper-btn {
+.feedback .swiper-buttons {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  pointer-events: none;
 }
-.feedback .swiper-button-prev {
-  left: 0;
-}
+.feedback .swiper-button-prev,
 .feedback .swiper-button-next {
-  right: 0;
+  pointer-events: all;
 }
 .feedback__slide {
   padding: 0 60px;
@@ -1460,16 +1473,16 @@ footer {
     height: 100svh;
   }
   .feedback {
-    padding: 100px 0 150px;
+    padding: 100px 0 50px;
   }
   .feedback__swiper {
     overflow: visible !important;
   }
-  .feedback .swiper-btn {
-    top: unset;
+  .feedback .swiper-buttons {
+    position: static;
     -webkit-transform: none;
             transform: none;
-    bottom: -90px;
+    margin-top: 60px;
   }
   .feedback__slide {
     padding: 0;

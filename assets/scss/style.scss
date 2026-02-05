@@ -335,12 +335,18 @@ footer {
 .hero {
     position: relative;
     height: 115svh;
-    background:
-        linear-gradient(#0000001a, #0000001a), url(/assets/img/hero.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    overflow: hidden;
+    clip-path: inset(0);
+
+    &__bg {
+        position: fixed;
+        inset: 0;
+        background:
+            linear-gradient(#0000001a, #0000001a),
+            url("/assets/img/hero.jpg") center / cover no-repeat;
+        z-index: 0;
+        will-change: transform;
+    }
 
     .container_pd {
         height: 100%;
@@ -353,6 +359,8 @@ footer {
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
+        position: relative;
+        z-index: 1;
     }
 
     h1 {
@@ -560,18 +568,20 @@ footer {
         width: 100%;
     }
 
-    .swiper-btn {
+    .swiper-buttons {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+        z-index: 2;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        pointer-events: none;
     }
 
-    .swiper-button-prev {
-        left: 0;
-    }
-
+    .swiper-button-prev,
     .swiper-button-next {
-        right: 0;
+        pointer-events: all;
     }
 
     &__slide {
@@ -1425,18 +1435,18 @@ footer {
     .hero {
         height: 100svh;
     }
-    
+
     .feedback {
-        padding: 100px 0 150px;
+        padding: 100px 0 50px;
 
         &__swiper {
             overflow: visible !important;
         }
 
-        .swiper-btn {
-            top: unset;
+        .swiper-buttons {
+            position: static;
             transform: none;
-            bottom: -90px;
+            margin-top: 60px;
         }
 
         &__slide {
