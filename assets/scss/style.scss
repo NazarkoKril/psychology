@@ -342,7 +342,7 @@ footer {
         position: fixed;
         inset: 0;
         background:
-            linear-gradient(#0000001a, #0000001a),
+            linear-gradient(#00000033, #00000033),
             url("/assets/img/hero.jpg") center / cover no-repeat;
         z-index: 0;
         will-change: transform;
@@ -385,15 +385,18 @@ footer {
             min-width: 233px;
 
             &.primary {
-                background-color: var(--color_white);
-                color: var(--color_black);
+                background-color: var(--color_green2);
+                color: var(--color_white);
             }
 
             &.secondary {
+                backdrop-filter: blur(2px);
                 background: transparent;
+                border: 2px solid #FFFFFF26;
                 color: var(--color_white);
-                border: 2px solid #ffffff26;
                 padding: 10px 14px;
+                outline: 0.5px solid #FEFEE5ab;
+                outline-offset: -1px;
             }
         }
     }
@@ -627,8 +630,8 @@ footer {
 }
 
 .problems {
-    background: url(/assets/img/problems-bg.jpg);
-    background-position: center;
+    background: linear-gradient(#1D1B165E, #1D1B165E), url(/assets/img/problems-bg.jpg);
+    background-position: center 20%;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100svh;
@@ -673,7 +676,6 @@ footer {
         display: block;
         width: fit-content;
         margin: 0 auto;
-        color: var(--color_black);
     }
 }
 
@@ -1346,6 +1348,7 @@ footer {
     .problems {
         height: unset;
         padding: 90px 0;
+        background-position: center;
 
         h2 {
             margin-bottom: 40px;

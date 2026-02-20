@@ -367,8 +367,8 @@ footer {
 .hero__bg {
   position: fixed;
   inset: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1019607843)), to(rgba(0, 0, 0, 0.1019607843))), url("/assets/img/hero.jpg") center/cover no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.1019607843), rgba(0, 0, 0, 0.1019607843)), url("/assets/img/hero.jpg") center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("/assets/img/hero.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/assets/img/hero.jpg") center/cover no-repeat;
   z-index: 0;
   will-change: transform;
 }
@@ -420,14 +420,17 @@ footer {
   min-width: 233px;
 }
 .hero__buttons .btn.primary {
-  background-color: var(--color_white);
-  color: var(--color_black);
+  background-color: var(--color_green2);
+  color: var(--color_white);
 }
 .hero__buttons .btn.secondary {
+  backdrop-filter: blur(2px);
   background: transparent;
-  color: var(--color_white);
   border: 2px solid rgba(255, 255, 255, 0.1490196078);
+  color: var(--color_white);
   padding: 10px 14px;
+  outline: 0.5px solid rgba(254, 254, 229, 0.6705882353);
+  outline-offset: -1px;
 }
 
 .specialist {
@@ -666,8 +669,9 @@ footer {
 }
 
 .problems {
-  background: url(/assets/img/problems-bg.jpg);
-  background-position: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 27, 22, 0.368627451)), to(rgba(29, 27, 22, 0.368627451))), url(/assets/img/problems-bg.jpg);
+  background: linear-gradient(rgba(29, 27, 22, 0.368627451), rgba(29, 27, 22, 0.368627451)), url(/assets/img/problems-bg.jpg);
+  background-position: center 20%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100svh;
@@ -721,7 +725,6 @@ footer {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
-  color: var(--color_black);
 }
 
 .videos {
@@ -1396,6 +1399,7 @@ footer {
   .problems {
     height: unset;
     padding: 90px 0;
+    background-position: center;
   }
   .problems h2 {
     margin-bottom: 40px;
